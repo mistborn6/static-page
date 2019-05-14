@@ -1,0 +1,78 @@
+@import 'color';
+
+.about {
+    #content {
+        .feature {
+            padding: 100px 0;
+            background-image: url(http://lorempixel.com/1920/1080);
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;      
+        }
+    }
+    .cover {
+        h4 {
+            margin: 30px 0;
+            color: #222;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .social-media {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            ul {
+                display: inline-block;
+            }
+            li {
+                float: left;
+                margin: 0 10px;
+            }
+            a {
+                color: $normal-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .info {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        .name {
+            color: $normal-color;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        p {
+            padding: 0;
+            color: #a5a5a5;
+            font-size: 12px;
+        }
+    }
+    .gray {
+        padding: 100px 0;
+        background-color: #f5f5f5;
+        text-align: center;
+        i {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 36px;
+        }
+        .number {
+            font-size: 36px;
+        }
+        h4 {
+            margin: 0;
+            color: #323232;
+            font-size: 15px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+

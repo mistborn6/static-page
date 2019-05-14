@@ -1,0 +1,135 @@
+@import 'color';
+
+.service {
+    .gray {
+        background-color: #f5f5f5;
+    }
+
+    #header {
+        position: absolute;
+        width: 100%;
+    }
+    #content {
+        .header {
+            background-image: url(https://dummyimage.com/1920x1080/eee/ddd);
+            &.black {
+                .title, .breadcrumb li {
+                    color: $black-color;
+                }
+            }
+        }
+    }
+
+    .services, .feature, .pricing {
+        padding: 100px 0;
+    }
+
+    .services {
+        .row {
+            > div {
+                padding: 50px;
+                &:hover {
+                    background: $black-color;
+                    color: $white-color;
+                    i {
+                        color: $active-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .pricing {
+        .package {
+            padding: 0 15px;
+            text-align: center;
+            .box {
+                border: 1px solid $border-color;
+                padding: 50px;
+            }
+            .name {
+                margin: 0;
+                margin-bottom: 30px;   
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            .value {
+                margin-bottom: 40px;
+                border-top: 1px solid $border-color;
+                border-bottom: 1px solid $border-color;
+                padding: 25px 0;
+            }
+            .price {
+                font-size: 42px;
+            }
+            .decimal {
+                margin-left: -10px;
+                font-size: 16px;
+            }
+            .duration {
+                text-transform: uppercase;
+            }
+            .features li {
+                margin-bottom: 15px;
+            }
+            .button {
+                width: 100%;
+                border: 1px solid $border-color;
+            }
+            &.recommended {
+                .box {
+                    background-color: #222;
+                    color: $white-color;
+                }
+                .name {
+                    color: $active-color;
+                }
+                .value {
+                    border-color: rgba($color: white, $alpha: 0.2)
+                }
+                .features {
+                    color: $p-color;
+                }
+            }
+        }
+    }
+
+    .special-offer {
+        .promo-info {
+            float: left;
+            .title {
+                margin-bottom: 10px;
+                em {
+                    color: $active-color;
+                    font-style: normal;
+                }
+            }
+            .desc {
+                color: $p-color;
+            }
+        }
+        .promo-button {
+            float: right;
+            margin: 0;
+        }
+    }
+
+    .big-dot {
+        li {
+            float: left;
+            margin-bottom: 10px;
+            width: 50%;
+            line-height: 1.5;
+            &:before {
+                font-family: fontello;
+                content: '\f1db';
+                padding-right: 10px;
+                color: $p-color;
+            }
+        }
+    }
+}
+
+

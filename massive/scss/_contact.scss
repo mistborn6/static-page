@@ -1,0 +1,28 @@
+@import 'color';
+
+.contact {
+    #content {
+        .title {
+            margin-bottom: 30px;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+    }
+    .contact-info {
+        .address {
+            margin-bottom: 30px;
+        }
+        .info {
+            padding: 0;
+        }
+    }
+    .question {
+        p {
+            padding-top: 0;
+            line-height: 30px;
+        }
+    }
+}
+
+
+
